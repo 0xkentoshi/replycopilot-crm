@@ -159,11 +159,3 @@ Endpoints: `GET /api/health`, `GET /api/knowledge`, `POST /api/analyze` с `{"cu
 ## AI-assisted development
 
 Codex использовался для implementation, testing и documentation. ChatGPT — для product/architecture discussion, сценариев и проверки UX/ограничений. Автор определил scope, UX, requirements и validation rules и вручную проверил финальное поведение прототипа. Token counts не заявляются.
-
-## Видео: сценарий на 1–2 минуты
-
-1. **0:00–0:15** — задача менеджера, три колонки, DEMO MODE и отсутствие зависимости от API key.
-2. **0:15–0:40** — Pricing → Analyze: от 25 000 ₽, источник в Knowledge used; отдельно предложение ведения от 18 000 ₽. Copy reply копирует только ответ.
-3. **0:40–1:00** — Timeline: 3–5 рабочих дней после материалов; Ready to buy: high opportunity.
-4. **1:00–1:20** — Price objection: спокойное уточнение scope; Unknown request: ERP не обещаем, confidence 20%, missing information.
-5. **1:20–1:45** — показать схему, зелёные проверки и объяснить фактическую роль AI-инструментов. Подтвердить ручной review.
