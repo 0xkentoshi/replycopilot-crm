@@ -126,4 +126,4 @@ Endpoints: `GET /api/health`, `GET /api/knowledge`, `POST /api/analyze` с `{"cu
 
 ## AI-assisted development
 
-Codex использовался для implementation, testing и documentation. Product/architecture discussion с ChatGPT: _автору подтвердить использование перед сдачей_. Автор определил scope, UX, requirements и validation rules; ручной review результатов автором — финальный шаг перед отправкой. Token counts не заявляются.
+Codex использовался для implementation, testing и documentation. Product/architecture discussion с ChatGPT. Автор определил scope, UX, requirements и validation rules; ручной review результатов автором — финальный шаг перед отправкой. Token counts не заявляются.
