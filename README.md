@@ -4,7 +4,7 @@
 
 ## Demo
 
-Live URL: _добавить после deploy_. Локально: http://localhost:5173.
+Локально: http://localhost:5173.
 
 ## What it does
 
