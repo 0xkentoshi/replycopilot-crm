@@ -4,7 +4,39 @@
 
 ## Demo
 
-Локально: http://localhost:5173.
+Локальный demo: `http://localhost:5173`. Проект включает детерминированный **DEMO MODE**, поэтому основные сценарии можно проверить без внешнего AI API key.
+
+## Screenshots
+
+### CRM workspace
+
+Полный рабочий экран: база знаний, диалог менеджера и AI Copilot в одном интерфейсе.
+
+![ReplyCopilot CRM overview](docs/screenshots/01-overview-dark.png)
+
+### Knowledge-grounded pricing reply
+
+Запрос цены: Copilot использует подтверждённую стоимость из базы знаний и отдельно формирует внутреннюю подсказку менеджеру.
+
+![Pricing scenario](docs/screenshots/02-pricing-grounded.png)
+
+### High-intent upsell
+
+При готовности клиента начать работу система отмечает высокую возможность допродажи, при этом внутренние рекомендации не попадают в клиентский ответ.
+
+![Ready to buy scenario](docs/screenshots/03-ready-to-buy.png)
+
+### Unknown request / anti-hallucination
+
+Если в базе нет подтверждённых условий, Copilot не выдумывает возможности, снижает уверенность и показывает, каких данных не хватает.
+
+![Unknown ERP safety scenario](docs/screenshots/04-unknown-request.png)
+
+### Light theme
+
+Интерфейс поддерживает отдельные light и dark themes.
+
+![ReplyCopilot CRM light theme](docs/screenshots/05-light-theme.png)
 
 ## What it does
 
@@ -126,4 +158,12 @@ Endpoints: `GET /api/health`, `GET /api/knowledge`, `POST /api/analyze` с `{"cu
 
 ## AI-assisted development
 
-Codex использовался для implementation, testing и documentation. Product/architecture discussion с ChatGPT. Автор определил scope, UX, requirements и validation rules; ручной review результатов автором — финальный шаг перед отправкой. Token counts не заявляются.
+Codex использовался для implementation, testing и documentation. ChatGPT — для product/architecture discussion, сценариев и проверки UX/ограничений. Автор определил scope, UX, requirements и validation rules и вручную проверил финальное поведение прототипа. Token counts не заявляются.
+
+## Видео: сценарий на 1–2 минуты
+
+1. **0:00–0:15** — задача менеджера, три колонки, DEMO MODE и отсутствие зависимости от API key.
+2. **0:15–0:40** — Pricing → Analyze: от 25 000 ₽, источник в Knowledge used; отдельно предложение ведения от 18 000 ₽. Copy reply копирует только ответ.
+3. **0:40–1:00** — Timeline: 3–5 рабочих дней после материалов; Ready to buy: high opportunity.
+4. **1:00–1:20** — Price objection: спокойное уточнение scope; Unknown request: ERP не обещаем, confidence 20%, missing information.
+5. **1:20–1:45** — показать схему, зелёные проверки и объяснить фактическую роль AI-инструментов. Подтвердить ручной review.
